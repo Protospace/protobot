@@ -1,1 +1,10 @@
 In here are the various bots we are working on and stealing from. The actual channel bot runs from protobot.
+
+Both tablecat (protobot) and eggdrop have dependancies:
+
+eggdrop : tcl
+
+tablecat :     * Python-Twitter (note: as of writing the one in ubuntu repos will not work)
+               * Oyoyo IRC library 
+
+                Both of these have multiple subdependancies.
