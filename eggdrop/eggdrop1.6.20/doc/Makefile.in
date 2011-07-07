@@ -1,0 +1,72 @@
+# Makefile for doc/
+# $Id: Makefile.in,v 1.25 2009/05/07 01:18:48 tothwolf Exp $
+
+SHELL = @SHELL@
+top_srcdir = @top_srcdir@
+srcdir = @srcdir@
+VPATH = @srcdir@
+
+@SET_MAKE@
+INSTALL = @INSTALL@
+INSTALL_PROGRAM = @INSTALL_PROGRAM@
+INSTALL_DATA = @INSTALL_DATA@
+INSTALL_SCRIPT = @INSTALL_SCRIPT@
+
+DOCS = ABOUT BANS BOTNET BUG-REPORT COMPILE-GUIDE CONTENTS \
+Changes1.6 FIRST-SCRIPT KNOWN-PROBLEMS MODULES PARTYLINE PATCH-HOWTO \
+TEXT-SUBSTITUTIONS TRICKS USERS Versions WEIRD-MESSAGES tcl-commands.doc
+
+MAN1 = man1/eggdrop.1
+
+WEB_DOCS = $(srcdir)/html/*.html
+SETTING_DOCS = core.settings CONTENTS
+SETTING_MOD_DOCS = $(srcdir)/settings/mod.*
+
+doofus:
+	@echo ""
+	@echo "Let's try this from the right directory..."
+	@echo ""
+	@cd .. && $(MAKE)
+
+all: $(DOCS) $(MAN1)
+
+clean:
+	@rm -f *~
+
+install:
+	@if test ! -d $(DEST)/doc; then \
+		echo "Creating 'doc' subdirectory."; \
+		$(top_srcdir)/misc/mkinstalldirs $(DEST)/doc >/dev/null; \
+	fi
+	@if test ! -d $(DEST)/doc/man1; then \
+		echo "Creating 'doc/man1' subdirectory."; \
+		$(top_srcdir)/misc/mkinstalldirs $(DEST)/doc/man1 >/dev/null; \
+	fi
+	@if test ! -d $(DEST)/doc/html; then \
+		echo "Creating 'doc/html' subdirectory."; \
+		$(top_srcdir)/misc/mkinstalldirs $(DEST)/doc/html >/dev/null; \
+	fi
+	@if test ! -d $(DEST)/doc/settings; then \
+		echo "Creating 'doc/settings' subdirectory."; \
+		$(top_srcdir)/misc/mkinstalldirs $(DEST)/doc/settings >/dev/null; \
+	fi
+	@echo "Copying docs."
+	@for i in $(DOCS); do \
+		$(INSTALL_DATA) $(srcdir)/$$i $(DEST)/doc/; \
+	done
+	@for i in $(MAN1); do \
+		$(INSTALL_DATA) $(srcdir)/$$i $(DEST)/doc/man1/; \
+	done
+	@for i in $(SETTING_DOCS); do \
+		$(INSTALL_DATA) $(srcdir)/settings/$$i $(DEST)/doc/settings/; \
+	done
+	@if test "x`echo $(SETTING_MOD_DOCS)`" != "x$(SETTING_MOD_DOCS)"; then \
+		for i in `echo $(SETTING_MOD_DOCS)`; do \
+			$(INSTALL_DATA) $$i $(DEST)/doc/settings/; \
+		done; \
+	fi
+	@if test "x`echo $(WEB_DOCS)`" != "x$(WEB_DOCS)"; then \
+		for i in `echo $(WEB_DOCS)`; do \
+			$(INSTALL_DATA) $$i $(DEST)/doc/html/; \
+		done; \
+	fi

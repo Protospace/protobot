@@ -1,0 +1,74 @@
+$Id: CONTENTS,v 1.23 2010/01/03 13:27:22 pseudo Exp $
+
+Directory Contents - /
+Last revised: April 16, 2003
+    _____________________________________________________________________
+
+                           Directory Contents - /
+
+
+  doc/
+    Lots of IMPORTANT DOCUMENTATION that you MUST READ is in this directory.
+
+  help/
+    All of the bot's help files are stored here.
+
+  language/
+    All of the bot's language files are stored here.
+
+  logs/
+    This is a good place for eggdrop to store log files.
+
+  misc/
+    These are misc. source/script files.
+
+  scripts/
+    Tcl scripts included with Eggdrop are contained in this directory.
+
+  src/
+    This is the Eggdrop source.
+
+  text/
+    This contains the motd and banner files.
+
+  aclocal.m4
+  config.h.in
+  configure
+  configure.ac
+    These are scripts for automatic configure of the bot.
+
+  AUTHORS
+    Contains a list of Eggdrop developers and major contributors.
+
+  ChangeLog
+    Contains CVS commit logs from each change made to Eggdrop in CVS.
+
+  COPYING
+    Eggdrop legal information is contained in this file.
+
+  disabled_modules
+    Any module listed in this file will not be compiled by default.
+
+  eggdrop.conf
+    This is a sample configuration file for your bot.
+
+  FEATURES
+    This tells you what Eggdrop can do -- a kind of advertisement.
+
+  INSTALL
+    Information on installing your Eggdrop.
+
+  Makefile.in
+    This helps with the automated compiling of the bot.
+
+  NEWS
+    This lists significant differences with previous versions.
+
+  README
+    You should read this file before even trying to compile Eggdrop.
+
+  THANKS
+    Contains a full list of Eggdrop contributors.
+    _____________________________________________________________________
+
+  Copyright (C) 2003 - 2010 Eggheads Development Team

@@ -1,0 +1,69 @@
+$Id: CONTENTS,v 1.27 2010/01/03 13:27:22 pseudo Exp $
+
+Directory Contents - doc/
+Last revised: August 04, 2004
+    _____________________________________________________________________
+
+                          Directory Contents - doc/
+
+
+  html/
+    An HTML version of Eggdrop's documentation is provided in this directory.
+
+  man1/
+    This contains Unix man page files.
+
+  settings/
+    This directory contains documentation for all config file and module
+    settings.
+
+  ABOUT
+    Information about Eggdrop and a brief history can be found in this file.
+
+  BOTNET
+    This is a guide to flags and bot user file sharing.
+
+  BUG-REPORT
+    Fill out this form and e-mail it to bugs@eggheads.org if you find a bug
+    in Eggdrop.
+
+  Changes
+    These files document the changes made to each version of Eggdrop.
+
+  COMPILE-GUIDE
+    If you have trouble compiling your Eggdrop, take a look in this file.
+
+  FIRST-SCRIPT
+    This document will help get you started with Tcl scripting for Eggdrop.
+
+  KNOWN-PROBLEMS
+    See this file for a list of things that are broken but aren't getting
+    fixed anytime soon
+
+  MODULES
+    Information on writing Eggdrop modules can be found in this document.
+
+  PARTYLINE
+    This file contains information about Eggdrop's partyline.
+
+  PATCH-HOWTO
+    This is a how-to on applying and creating Eggdrop patches.
+
+  tcl-commands.doc
+    Documentation on Eggdrop Tcl commands available to scripters can be found
+    here.
+
+  TEXT-SUBSTITUTIONS
+    This contains documentation on %-variables that can be used in help, MOTD,
+    and BANNER files.
+
+  TRICKS
+    Some advanced tips on making Eggdrop do what you want it to do can be found
+    here. It also contains tweaking tips for your config file.
+
+  Versions
+    Contains a list of Eggdrop versions, release dates, and other important
+    notes in reverse chronological order.
+    _____________________________________________________________________
+
+  Copyright (C) 2003 - 2010 Eggheads Development Team

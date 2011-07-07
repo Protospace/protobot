@@ -1,0 +1,23 @@
+$Id: mod.dns,v 1.18 2010/01/03 13:27:23 pseudo Exp $
+
+DNS Module
+Last revised: February 12, 2002
+    _____________________________________________________________________
+
+                                 DNS Module
+
+
+  This module provides asynchronous dns support. This will avoid long periods
+  where the bot just hangs there, waiting for a hostname to resolve, which will
+  often let it timeout on all other connections.
+
+  This module requires: none
+
+  Put this line into your Eggdrop configuration file to load the dns
+  module:
+
+    loadmodule dns
+
+    _____________________________________________________________________
+
+  Copyright (C) 2000 - 2010 Eggheads Development Team
