@@ -1,0 +1,7 @@
+Commands are as follows:
+
+!tweet <something> :: something gets tweeted
+!soapself <something> :: bot auths self to nickserv. the msg cannot be empty, but the content is meaningless. This will be fixed.
+
+Future command will allow passing of commands via msg, and passing arbitrary commands to nickserv.
+
