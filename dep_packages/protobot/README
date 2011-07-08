@@ -1,0 +1,4 @@
+Dependancies: First install 
+httplib2-0.7.1.tar.gz  hudson-python-oauth2-205.zip  simplejson-2.1.6.tar.gz
+
+THEN install python-twitter-0.8.2.tar.gz
