@@ -93,6 +93,12 @@ class BotHandler(DefaultCommandHandler):
                         helpers.msg(self.client, chan, 'It has been tweeted. http://twitter.com/%s' % twitter.username)
                         print '%s responded to %s (%s) posting %s ' % (twitter.username, prefix, chan, repr(msg))
         
+        match = re.match('\!soapself (.*)', msg)
+        if match:
+            status = match.group(1).strip()
+            helpers.msg(self.client, 'nickserv', 'identify omlette')
+            helpers.msg(self.client, chan, 'Si, Capitan!')
+            print 'Authing Self'
 
 def main():
     # Define parser options

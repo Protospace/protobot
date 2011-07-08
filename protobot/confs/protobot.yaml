@@ -1,5 +1,5 @@
 host: irc.freenode.net
-nick: protochan
+nick: protobot
 channels: ['#protospace']
 twitters:
 - channel: '#protospace'
