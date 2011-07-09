@@ -1,6 +1,0 @@
-[submodule "/home/weetabix/git/protobot/sixohsix-twitter"]
-	path = protobot/sixohsix-twitter
-	url = git://github.com/sixohsix/twitter.git
-[submodule "/home/weetabix/git/protobot/python-irclib"]
-	path = protobot/python-irclib
-	url = git://github.com/sixohsix/python-irclib.git
