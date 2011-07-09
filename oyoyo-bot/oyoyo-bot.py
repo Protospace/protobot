@@ -11,8 +11,8 @@ from oyoyo import helpers
 
 HOST = 'irc.freenode.net'
 PORT = 6667
-NICK = 'oyoyo-example'
-CHANNEL = '#oyoyo-test'
+NICK = 'protoyoyo'
+CHANNEL = '#protospace'
 
 
 class MyHandler(DefaultCommandHandler):
@@ -21,9 +21,9 @@ class MyHandler(DefaultCommandHandler):
         match = re.match('\!say (.*)', msg)
         if match:
             to_say = match.group(1).strip()
-            print('Saying, "%s"' % to_say)
-            helpers.msg(self.client, chan, to_say)
-
+#            print('Saying, "%s"' % to_say)
+#            helpers.msg(self.client, chan, to_say)
+            print('self '+ self+ ' nick '+ nick+ ' chan '+ chan+ ' msg '+ msg)
 
 def connect_cb(cli):
     helpers.join(cli, CHANNEL)
