@@ -1,0 +1,6 @@
+[submodule "protobot/sixohsix-twitter"]
+	path = protobot/sixohsix-twitter
+	url = git://github.com/sixohsix/twitter.git
+[submodule "protobot/python-irclib"]
+	path = protobot/python-irclib
+	url = git://github.com/sixohsix/python-irclib.git
