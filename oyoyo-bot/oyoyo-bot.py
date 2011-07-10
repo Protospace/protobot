@@ -23,8 +23,8 @@ class MyHandler(DefaultCommandHandler):
             to_say = match.group(1).strip()
 #            print('Saying, "%s"' % to_say)
 #            helpers.msg(self.client, chan, to_say)
-            print('self '+ self+ ' nick '+ nick+ ' chan '+ chan+ ' msg '+ msg)
-
+            print('self '+ ' nick '+ nick+ ' chan '+ chan+ ' msg '+ msg)
+            helpers.msg(self.client, chan, 'self '+ ' nick '+ nick+ ' chan '+ chan+ ' msg '+ msg)
 def connect_cb(cli):
     helpers.join(cli, CHANNEL)
 
